@@ -694,72 +694,6 @@ footer .footer-bottom a:hover {
   padding: 143px 40px;
 }
 
-.related {
-  width: 100%;
-  max-width: 380px;
-  padding: 0 15px;
-  margin: auto;
-  margin-top: 80px;
-}
-
-.related .related-carousel .slick-arrow {
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  background-color: #eb3935;
-  border-radius: 50%;
-  border: 1px solid red;
-  outline: none;
-  font-size: 20px;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
-  bottom: 35px;
-  z-index: 2;
-}
-
-.related .related-carousel .slick-arrow:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background-color: transparent;
-  color: #eb3935;
-}
-
-.related .related-carousel .slick-prev {
-  left: 40%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.related .related-carousel .slick-next {
-  right: 40%;
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-.related .related-carousel .slick-dots {
-  margin-top: 120px;
-  list-style: none;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.related .related-carousel .slick-dots li {
-  width: 12px;
-  height: 12px;
-  background-color: #4f4f4f;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .contact form button {
   border: 1px solid #eb3935;
   background-color: #eb3935;
@@ -789,47 +723,6 @@ footer .footer-bottom a:hover {
   color: #eb3935;
 }
 
-.related .related-carousel .slick-dots li button {
-  display: none;
-}
-
-.related .related-carousel .slick-dots .slick-active {
-  background-color: #eb3935;
-}
-
-.related .related-carousel .item h3 {
-  font-family: "NIKE", sans-serif;
-  font-size: 35px;
-  line-height: 44px;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #222;
-  margin-top: 15px;
-}
-
-.related .related-carousel .item a {
-  text-decoration: none;
-  border: 1px solid #eb3935;
-  background-color: #eb3935;
-  color: #fff;
-  font-size: 18px;
-  margin: auto;
-  margin-top: 40px;
-  width: 170px;
-  height: 52px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  letter-spacing: 2px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .wrap.blue-color header nav ul .active a {
   background-color: #6c9bc8;
 }
@@ -846,13 +739,6 @@ footer .footer-bottom a:hover {
 .wrap.green-color header nav ul li a:hover {
   color: #fff;
   background-color: #b0de3d;
-}
-
-.related .related-carousel .item a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background-color: #fff;
-  color: #eb3935;
 }
 
 .customers-reviews {
@@ -1119,26 +1005,6 @@ footer .footer-bottom {
     padding: 183px 40px;
   }
 
-  .related {
-    max-width: 580px;
-  }
-
-  .related .related-carousel .slick-slide {
-    margin: 0 5px;
-  }
-
-  .related .related-carousel .slick-prev {
-    left: 42%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  .related .related-carousel .slick-next {
-    right: 42%;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-  }
-
   .customers-reviews {
     max-width: 580px;
   }
@@ -1346,22 +1212,6 @@ footer .footer-bottom {
     width: 50%;
   }
 
-  .related {
-    max-width: 760px;
-  }
-
-  .related .related-carousel .slick-prev {
-    left: 43%;
-  }
-
-  .related .related-carousel .slick-next {
-    right: 43%;
-  }
-
-  .related .related-carousel .slick-dots {
-    gap: 8px;
-  }
-
   .customers-reviews {
     max-width: 760px;
   }
@@ -1462,18 +1312,6 @@ footer .footer-bottom {
     width: 50%;
   }
 
-  .related {
-    max-width: 980px;
-  }
-
-  .related .related-carousel .slick-prev {
-    left: 45%;
-  }
-
-  .related .related-carousel .slick-next {
-    right: 45%;
-  }
-
   .customers-reviews {
     max-width: 980px;
   }
@@ -1540,18 +1378,6 @@ footer .footer-bottom {
 
   .quote-section {
     max-width: 1180px;
-  }
-
-  .related {
-    max-width: 1180px;
-  }
-
-  .related .related-carousel .slick-prev {
-    left: 46%;
-  }
-
-  .related .related-carousel .slick-next {
-    right: 46%;
   }
 
   .customers-reviews {
@@ -1647,30 +1473,6 @@ footer .footer-bottom {
   background-color: #6c9bc8;
 }
 
-.wrap.blue-color .related .related-carousel .slick-arrow {
-  background-color: #6c9bc8;
-  border: 1px solid #6c9bc8;
-}
-
-.wrap.green-color .related .related-carousel .slick-arrow {
-  background-color: #b0de3d;
-  border: 1px solid #b0de3d;
-}
-
-.wrap.blue-color .related .related-carousel .slick-arrow:hover {
-  color: #6c9bc8;
-  background-color: #fff;
-}
-
-.wrap.blue-color .related .related-carousel .slick-dots .slick-active {
-  background-color: #6c9bc8;
-}
-
-.wrap.blue-color .related .related-carousel .item a {
-  border: 1px solid #6c9bc8;
-  background-color: #6c9bc8;
-}
-
 .wrap.green-color .banner .banner-content-left a:hover {
   background-color: #fff;
   color: #b0de3d;
@@ -1679,16 +1481,6 @@ footer .footer-bottom {
 .wrap.green-color .about .about-info a:hover {
   background-color: #fff;
   color: #b0de3d;
-}
-
-.wrap.green-color .related .related-carousel .item a {
-  border: 1px solid #b0de3d;
-  background-color: #b0de3d;
-}
-
-.wrap.blue-color .related .related-carousel .item a:hover {
-  background-color: #fff;
-  color: #6c9bc8;
 }
 
 .wrap.blue-color .customers-reviews .reviews-wrap .review i {
@@ -1733,20 +1525,6 @@ footer .footer-bottom {
 
 .wrap.green-color .quote-section .quote-section-logo {
   background-color: #b0de3d;
-}
-
-.wrap.green-color .related .related-carousel .slick-arrow:hover {
-  color: #b0de3d;
-  background-color: #fff;
-}
-
-.wrap.green-color .related .related-carousel .slick-dots .slick-active {
-  background-color: #b0de3d;
-}
-
-.wrap.green-color .related .related-carousel .item a:hover {
-  background-color: #fff;
-  color: #b0de3d;
 }
 
 .wrap.green-color .customers-reviews .reviews-wrap .review i {
