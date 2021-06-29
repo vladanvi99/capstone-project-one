@@ -2,6 +2,10 @@
 
 # First Capstone project
 
+## Video presentation about project
+
+https://www.loom.com/share/ec9b4c0ca30c48399a97d90a2789e628
+
 > I will show something about AIR MAX COLLECTION.
 
 ![screenshot](./Screenshot_2.png)
