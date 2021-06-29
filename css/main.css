@@ -385,6 +385,12 @@ footer .footer-bottom a:hover {
   max-width: 100%;
 }
 
+.about .about-logo img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
 .about-banner .about-logo img {
   max-width: 201px;
   display: block;
