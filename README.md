@@ -4,7 +4,7 @@
 
 ## Video presentation about project
 
-https://www.loom.com/share/ec9b4c0ca30c48399a97d90a2789e628
+https://www.loom.com/share/2c23cc02971a4156b0d691b37038f1b4
 
 > I will show something about AIR MAX COLLECTION.
 
@@ -21,7 +21,7 @@ This project is a project, about NIKE AIR MAX COLLECTION.
 
 ## Live Demo
 
-No Live Preview
+https://vladanvi99.github.io/capstone-project-one/
 
 ## Authors
 
@@ -42,13 +42,7 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [CREATIVE COMMONS LICENSE](https://creativecommons.org/licenses/) licensed.
 

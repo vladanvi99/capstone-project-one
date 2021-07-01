@@ -8,144 +8,135 @@
     </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/slick.css'>
     <link rel="icon" href="./images/global/favIcon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrap red-color">
-        <a href="#" class="back-to-top-btn"><i class="fas fa-chevron-up"></i></a>
-        <!--HEADER START-->
-        <div class="circle-bg"></div>
-        <header>
+    <!--HEADER START-->
+    <header>
+        <div class="header-top">
             <nav>
-                <a href="index.html" class="logo">
-                    <img src="./images/global/logoNoTextBlack.png" alt="logo">
-                    NIKE
-                </a>
-                <button type="button" class="open-mobile-menu">
-                    <img src="./images/global/menu-toggler.svg" alt="open-mobile-menu">
-                </button>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
                 <ul>
-                    <li class="exit"><i class="fas fa-times"></i></li>
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">My Page</a></li>
+                    <li><a href="#">Layout</a></li>
                 </ul>
             </nav>
-        </header>
-        <!--HEADER END-->
-        <!--BANNER START-->
-        <section id="banner" class="banner">
-            <div class="banner-content-left">
-                <h1>NIKE AIR<br>MAX COLLECTION</h1>
-                <p>Inspiring the world’s athletes, Nike delivers inovative products, experiences and services.</p>
-                <a rel="noopener noreferrer" href="https://www.nike.com/w/mens-air-max-shoes-a6d8hznik1zy7ok" target="_blank">EXPLORE</a>
-            </div>
-            <div class="banner-content-right">
-                <div class="back-element">
-                    <div class="top-content">
-                        <img src="./images/global/logoNoTextWhite.png" alt="logo">
-                        <h2>JUST DO IT</h2>
-                    </div>
-                    <div class="bottom-content">
-                        <h2>NIKE SHOES</h2>
-                    </div>
-                </div>
-                <img class="shoe shoe-color" src="./images/global/redNikeShoe.png" alt="red-shoe">
-            </div>
-            <div class="colors">
-                <p>Colors:</p>
-                <div class="circle-wraps">
-                    <div class="circle red active">
-                        <div class="circle-border"></div>
-                    </div>
-                    <div class="circle blue">
-                        <div class="circle-border"></div>
-                    </div>
-                    <div class="circle green">
-                        <div class="circle-border"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="social-icons-link-page-btn">
-                <div class="social-icons">
-                    <a href="#" class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!--BANNER END-->
-        <!--ABOUT US SECTION START-->
-        <section id="about" class="about">
-            <div class="about-logo">
-                <img src="./images/global/logoTextBlack.png" alt="logo">
-            </div>
-            <div class="about-info">
-                <h2>ABOUT</h2>
-                <p>Nike Air Max is a line of shoes produced by Nike, Inc., with the first model released in 1987. Air Max shoes are identified by their midsoles incorporating flexible urethane pouches filled with pressurized gas, visible from the exterior of the shoe and intended to provide cushioning underfoot. Air Max was conceptualized by Tinker Hatfield, who initially worked for Nike designing stores.</p>
-                <a href="about.html">
-                    SEE MORE
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <button class="open-menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="./images/global/logoNoTextBlack.png" alt="logo">
                 </a>
+                <ul>
+                    <li class="close-menu"><button class="close-menu-btn" type="button"><i class="fas fa-times"></i></button></li>
+                    <li><a class="first-item" href="index.html">Home</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a class="last-item" href="#">CC Campaign</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--HEADER END-->
+    <!--BANENR START-->
+    <section class="banner">
+        <div class="overlay"></div>
+        <div class="banner-text">
+            <p class="hello">"Hello World!!!"</p>
+            <h1>NIKE AIR<br>MAX COLLECTION<br>2021</h1>
+            <p class="description">Inspiring the world’s athletes, Nike delivers inovative products, experiences and services. Inspiring the world’s athletes, Nike delivers inovative products.</p>
+            <h2>2021.6.30(WED) ~ 2021.7.3(SAT)</h2>
+            <p class="places">@ Belgrade Arena, Sava Center and more</p>
+        </div>
+        <video class="bannerBg" autoplay muted loop>
+            <source src="./videos/pexels-koolshooters-8544698.mp4" type="video/mp4">
+        </video>
+    </section>
+    <!--BANNER END-->
+    <!--MAIN PROGRAM START-->
+    <section class="main-program">
+        <div class="section-head">
+            <h2 class="head">Main Program</h2>
+            <div class="line"></div>
+        </div>
+        <ul class="program-list">
+            <li class="item">
+                <i class="far fa-address-card"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </li>
+            <li class="item">
+                <i class="fas fa-anchor"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </li>
+            <li class="item">
+                <i class="fas fa-desktop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </li>
+            <li class="item">
+                <i class="fas fa-globe"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </li>
+            <li class="item">
+                <i class="fas fa-street-view"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </li>
+        </ul>
+        <a class="whole-program" href="#">SEE THE WHOLE PROGRAM</a>
+    </section>
+    <!--MAIN PROGRAM END-->
+    <!--FEATURED SPEAKERS START-->
+    <section class="featured-speakers">
+        <div class="section-head head">
+            <h2 class="speakers-head">Featured Speakers</h2>
+            <div class="line"></div>
+        </div>
+        <ul class="speakers-list"></ul>
+    </section>
+    <!--FEATURED SPEAKER END-->
+    <!--PARTNERS START-->
+    <section class="partners">
+        <div class="section-head">
+            <h2 class="partners-head head">Partner</h2>
+            <div class="line"></div>
+        </div>
+        <ul class="partners-list">
+            <li class="partner-item"><i class="fab fa-firefox partner-icon"></i>Firefox</li>
+            <li class="partner-item"><i class="fab fa-google-play partner-icon"></i>GooglePlay</li>
+            <li class="partner-item"><i class="fas fa-pizza-slice partner-icon"></i>PizzaParty</li>
+            <li class="partner-item"><i class="fas fa-dumbbell partner-icon"></i>VlaxGym</li>
+            <li class="partner-item"><i class="fab fa-amazon partner-icon"></i>Amazon</li>
+        </ul>
+    </section>
+    <!--PARTNERS END-->
+    <!--FOOTER START-->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">
+                <img class="logo-img" src="./images/global/logoTextBlack.png" alt="logo">
+            </a>
+            <div class="footer-text">
+                <p class="copy-right">2015&COPY;It is a long established fact that a reader will be distracte</p>
+                <p class="footer-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
-        </section>
-        <!--ABOUT US SECTION END-->
-        <!--QUOTE SECTION START-->
-        <section id="quote-section" class="quote-section">
-            <div class="quote-section-quote">
-                <cite>TOMORROW<br>YOU WILL WISH<br>YOU HAD<br>STARTED TODAY</cite>
-            </div>
-            <div class="quote-section-logo">
-                <img src="./images/global/logoTextWhite.png" alt="logo">
-            </div>
-        </section>
-        <!--QUOTE SECTION END-->
-        <!--CUSTOMER REVIEWS START-->
-        <section id="customers-reviews" class="customers-reviews">
-            <h2 class="section-head">CUSTOMER REVIEWS</h2>
-            <ul class="reviews-wrap">
-            
-            </ul>
-        </section>
-        <!--CUSTOMER REVIEWS END-->
-        <!--CONTACT START-->
-        <section id="contact" class="contact">
-            <form method="POST" action="https://formspree.io/f/xnqldeyv">
-                <div class="input-wrap">
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name" id="name" placeholder="Full Name" required>
-                </div>
-                <div class="input-wrap">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                </div>
-                <div class="input-wrap">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Message" minlength="20"></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-            <div class="logo-wrap">
-                <img src="images/global/logoTextWhite.png" alt="logo">
-            </div>
-        </section>
-        <!--CONTACT END-->
-        <!--FOOTE START-->
-        <footer>
-            <div class="footer-bottom">
-                <p>CopyRight&COPY; By <a rel="noopener noreferrer" href="https://www.facebook.com/ITHive-Despotovac-101366482012645" target="_blank">Vladan Videnovic</a></p>
-            </div>
-        </footer>
-        <!--FOOTER END-->
-    </div>
-    <script src='./js/jquery-3.5.1.min.js'></script>
-    <script src='./js/slick.js'></script>
+        </div>
+    </footer>
+    <!--FOOTER END-->
     <script type="module" src='./js/main.js'></script>
 </body>
 </html>

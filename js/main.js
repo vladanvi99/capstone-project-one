@@ -1,97 +1,33 @@
 import data from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const { reviews } = data;
-  // FIXED HEADER & BACK TO TOP BTN
-  const backToTopBtn = document.querySelector('.back-to-top-btn');
-  const header = document.querySelector('header');
-  window.addEventListener('scroll', () => {
-    const scrollOffset = window.scrollY;
-    if (scrollOffset > 100) {
-      header.classList.add('fixed-header');
-      backToTopBtn.classList.add('display-back-to-top-btn');
-    } else {
-      header.classList.remove('fixed-header');
-      backToTopBtn.classList.remove('display-back-to-top-btn');
-    }
-  });
+  const { speakers } = data;
   // DISPLAY MOBILE MENU
-  const openMenuBtn = document.querySelector('header .open-mobile-menu img');
-  const closeMenuBtn = document.querySelector('header ul .exit i');
-  const menuWrap = document.querySelector('header ul');
+  const openMenuBtn = document.querySelector('header .open-menu i');
+  const closeMenuBtn = document.querySelector('header .close-menu-btn i');
+  const menuWrap = document.querySelector('header .header-bottom ul');
   openMenuBtn.addEventListener('click', () => menuWrap.classList.add('display-menu'));
   closeMenuBtn.addEventListener('click', () => menuWrap.classList.remove('display-menu'));
-  // LOAD REVIEWS
-  const reviewsWrap = document.querySelector('.reviews-wrap');
-  function implementReviews() {
-    reviews.forEach((review) => {
-      const reviewItem = `<li class="review">
-              <div class="user-img">
-                  <img src="${review.img}" alt="user-img">
+  // LOAD SPEAKERS
+  const speakersList = document.querySelector('.speakers-list');
+  function implementSpeakers() {
+    speakers.forEach((speaker) => {
+      const speakerItem = `<li class="speaker-item">
+              <div class="speaker-img-wrap">
+                <i class="far fa-square box"></i>
+                <img src="${speaker.img}" alt="speaker-img" class="speaker-img">
               </div>
-              <div class="user-review">
-                  <h3>${review.name}</h3>
-                  <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                  </div>
-                  <p>${review.review}</p>
+              <div class="speaker-info">
+                  <h3 class="speaker-name">${speaker.name}</h3>
+                  <p class="speaker-position">${speaker.position}</p>
+                  <div class="speaker-line"></div>
+                  <p class="speaker-text">${speaker.text}</p>
               </div>
           </li>`;
-      reviewsWrap.innerHTML += reviewItem;
+      speakersList.innerHTML += speakerItem;
     });
   }
-  if (document.querySelector('.reviews-wrap')) {
-    implementReviews();
+  if (document.querySelector('.speakers-list')) {
+    implementSpeakers();
   }
-  // CHANGE TEMPLATE COLOR
-  const colorBtns = [...document.querySelectorAll('.colors .circle-wraps .circle')];
-  const pageWraps = [...document.querySelectorAll('.wrap')];
-  const shoeImg = document.querySelector('.shoe-color');
-  // CHANGE TEMPLATE COLOR ON LOAD
-  function changeTemplateColorOnLoad() {
-    if (localStorage.getItem('templateColor')) {
-      const newColorClass = localStorage.getItem('templateColor');
-      pageWraps.forEach((wrap) => {
-        const oldColorClass = wrap.classList[1];
-        wrap.classList.remove(oldColorClass);
-        wrap.classList.add(`${newColorClass}-color`);
-      });
-      if (document.querySelector('.shoe-color')) {
-        shoeImg.src = `./images/global/${newColorClass}NikeShoe.png`;
-        colorBtns.forEach((btn) => btn.classList.remove('active'));
-        switch (newColorClass) {
-          case 'red':
-            colorBtns[0].classList.add('active');
-            break;
-          case 'blue':
-            colorBtns[1].classList.add('active');
-            break;
-          case 'green':
-            colorBtns[2].classList.add('active');
-            break;
-          default:
-            colorBtns[0].classList.add('active');
-        }
-      }
-    }
-  }
-  changeTemplateColorOnLoad();
-  // CHANGE TEMPLATE COLOR ON CLICK
-  function changeTemplateColorOnClick(btn) {
-    colorBtns.forEach((btn) => btn.classList.remove('active'));
-    btn.classList.add('active');
-    const newColorClass = btn.classList[1];
-    pageWraps.forEach((wrap) => {
-      const oldColorClass = wrap.classList[1];
-      wrap.classList.remove(oldColorClass);
-      wrap.classList.add(`${newColorClass}-color`);
-    });
-    shoeImg.src = `./images/global/${newColorClass}NikeShoe.png`;
-    localStorage.setItem('templateColor', newColorClass);
-  }
-  colorBtns.forEach((btn) => btn.addEventListener('click', () => changeTemplateColorOnClick(btn)));
 });
